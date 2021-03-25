@@ -12,6 +12,8 @@
         <module>api-util</module>
         <module>api-bean</module>
         <module>api-service</module>
+        <module>api-web</module>
+        <module>generator-code</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -21,7 +23,6 @@
         <spring.boot.version>2.3.0.RELEASE</spring.boot.version>
         <guava.version>19.0</guava.version>
         <junit.version>4.12</junit.version>
-        <lombok.version>1.18.2</lombok.version>
         <mysql.connector.version>5.1.46</mysql.connector.version>
         <hikaricp.version>3.2.0</hikaricp.version>
         <mybatis.plus.version>3.3.2</mybatis.plus.version>
@@ -30,7 +31,7 @@
         <json.path.version>2.4.0</json.path.version>
         <jsoup.version>1.11.3</jsoup.version>
         <jaxen.version>1.1.6</jaxen.version>
-        <beetl.version>3.3.2.RELEASE</beetl.version>
+        <beetl.version>3.1.8.RELEASE</beetl.version>
     </properties>
 
     <dependencyManagement>
@@ -41,12 +42,6 @@
                 <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
             </dependency>
 
             <!-- mysql -->
@@ -122,5 +117,11 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
