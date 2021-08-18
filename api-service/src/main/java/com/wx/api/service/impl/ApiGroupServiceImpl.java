@@ -6,6 +6,7 @@ import com.wx.api.service.ApiGroupService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * <p>
@@ -15,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author wuxu
  * @date 2021-03-25
  */
+@Slf4j
 @Service
 public class ApiGroupServiceImpl extends ServiceImpl<ApiGroupMapper, ApiGroup> implements ApiGroupService {
 
